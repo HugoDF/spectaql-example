@@ -1,6 +1,8 @@
 # SpectaQL Example
 
-Minimal SpectaQL example using a static schema.
+Minimal SpectaQL example using a static schema to build a docs site (hostable on eg. GH pages).
+
+[spectaql](https://github.com/anvilco/spectaql)
 
 ## Setup
 
