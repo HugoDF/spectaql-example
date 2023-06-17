@@ -1,16 +1,14 @@
 {
-  "private": true,
+  "name": "spectaql-example",
+  "version": "1.0.0",
+  "description": "SpectaQL example using a static schema.",
   "scripts": {
-    "lint": "xo .",
-    "format": "xo . --fix"
+    "build": "spectaql config.yml",
+    "dev": "npm run build -- -d"
   },
+  "author": "Hugo Di Francesco",
+  "license": "MIT",
   "devDependencies": {
-    "xo": "latest"
-  },
-  "xo": {
-    "prettier": true,
-    "space": true,
-    "globals": []
-  },
-  "license": "MIT"
+    "spectaql": "^2.1.1"
+  }
 }

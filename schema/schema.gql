@@ -1,0 +1,18 @@
+type Book {
+  title: String!
+  author: String!
+}
+input BookInput {
+  title: String!
+  "**Deprecated** we're still waiting for `@deprecated` on input fields (note that markdown in GQL descriptions works)"
+  author: String!
+}
+type Mutation {
+  """
+  Supports GraphQL descriptions
+  """
+  addBook(book: BookInput!): Book!
+}
+type Query {
+  books: [Book!]!
+}

@@ -1,0 +1,27 @@
+spectaql:
+  targetDir: docs
+
+introspection:
+  # schemas get merged into 1
+  schemaFile:
+    # - ./schema/schema.gql
+    # - ./schema/other-schema.gql
+    - ./schema/*.gql
+  queryNameStrategy: capitalizeFirst
+
+info:
+  title: Minimal SpectaQL Example
+  description: SpectaQL example using a static schema.
+  x-url: "https://github.com/HugoDF/spectaql-demo"
+  x-introItems:
+  - title: Intro item 1
+    description: |
+      When referencing multiple `schemaFile` documents, it merges them.
+
+      Eg. `Query` will include both `book` from schema.gql and `id` from `other-schema.gql`.
+
+      Example information about the API. Supports `markdown`. Including tables:
+
+      | Something | value |
+      | --- | --- |
+      | Key | "123" |
