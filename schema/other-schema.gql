@@ -1,3 +1,8 @@
+enum EnumValue {
+  TYPE_1
+  TYPE_2
+}
 type Query {
   id: String!
+  type: EnumValue!
 }
