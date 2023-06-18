@@ -1,0 +1,15 @@
+spectaql:
+  targetDir: docs/multi/schema-gql
+
+introspection:
+  schemaFile: ./schema/schema.gql
+  metadataFile: ./metadata.json
+  queryNameStrategy: capitalizeFirst
+
+info:
+  title: schema.gql docs
+  description: Docs for schema.gql
+  x-url: "https://github.com/HugoDF/spectaql-example"
+  x-introItems:
+    - title: Back to list of schemas
+      url: "../index.html"

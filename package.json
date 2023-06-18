@@ -4,6 +4,8 @@
   "description": "SpectaQL example using a static schema.",
   "scripts": {
     "build": "spectaql config.yml",
+    "postbuild": "npm run build:multi",
+    "build:multi": "spectaql ./multi-schema/config.yml && spectaql ./multi-schema/schema-config.yml && spectaql ./multi-schema/other-schema-config.yml",
     "dev": "npm run build -- -d"
   },
   "author": "Hugo Di Francesco",
