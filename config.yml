@@ -13,7 +13,7 @@ introspection:
 info:
   title: Minimal SpectaQL Example
   description: SpectaQL example using a static schema.
-  x-url: "https://github.com/HugoDF/spectaql-demo"
+  x-url: "https://github.com/HugoDF/spectaql-example"
   x-introItems:
     - title: Intro item 1
       description: |

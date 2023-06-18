@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Minimal SpectaQL Example</title>
+    <title>schema.gql docs</title>
     <link rel="stylesheet" href="stylesheets/spectaql.min.css" />
     <script src="javascripts/spectaql.min.js"></script>
   </head>
@@ -23,7 +23,7 @@
             <h4 class="nav-group-title">Introduction</h4>
             <ul class="nav-group-items">
               <li><a href="#introduction">Welcome</a></li>
-              <li><a href="#introduction-item-0">Intro item 1</a></li>
+              <li><a data-traverse-ignore="" href="../index.html">Back to list of schemas</a></li>
             </ul>
           </div>
           <div class="nav-group">
@@ -35,8 +35,6 @@
                 </h5>
                 <ul class="nav-group-section-items">
                   <li><a href="#query-books">books</a></li>
-                  <li><a href="#query-id">id</a></li>
-                  <li><a href="#query-type">type</a></li>
                 </ul>
               </li>
               <li class="nav-group-section">
@@ -56,7 +54,6 @@
               <li><a href="#definition-Book">Book</a></li>
               <li><a href="#definition-BookInput">BookInput</a></li>
               <li><a href="#definition-Boolean">Boolean</a></li>
-              <li><a href="#definition-EnumValue">EnumValue</a></li>
               <li><a href="#definition-ID">ID</a></li>
               <li><a href="#definition-String">String</a></li>
             </ul>
@@ -71,42 +68,16 @@
           </button>
         </div>
         <article id="content">
-          <h1 class="doc-heading">Minimal SpectaQL Example</h1>
+          <h1 class="doc-heading">schema.gql docs</h1>
           <div id="introduction" data-traverse-target="introduction">
             <div id="welcome" class="doc-row">
               <div class="doc-copy">
-                <p>SpectaQL example using a static schema.</p>
+                <p>Docs for schema.gql</p>
               </div>
               <div class="doc-examples">
                 <div class="example-section welcome-api-endpoints-section example-section-is-code">
                   <h5>API Endpoints</h5>
                   <pre><code>https://github.com/HugoDF/spectaql-example</code></pre>
-                </div>
-              </div>
-            </div>
-            <div id="introduction-item-0" class="introduction-item" data-traverse-target="introduction-item-0">
-              <h2 class="introduction-item-title">Intro item 1</h2>
-              <div class="doc-row">
-                <div class="doc-copy">
-                  <p>When referencing multiple <code>schemaFile</code> documents, it merges them.</p>
-                  <p>Eg. <code>Query</code> will include both <code>book</code> from schema.gql and <code>id</code> from <code>other-schema.gql</code>.</p>
-                  <p>Example information about the API. Supports <code>markdown</code>. Including tables:</p>
-                  <table>
-                    <thead>
-                      <tr>
-                        <th>Something</th>
-                        <th>value</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Key</td>
-                        <td>&quot;123&quot;</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div class="doc-examples">
                 </div>
               </div>
             </div>
@@ -151,91 +122,11 @@
       <span class="hljs-punctuation">{</span>
         <span class="hljs-attr">"id"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"784a07a9-d103-4ccb-926f-b38fc6b071f2"</span><span class="hljs-punctuation">,</span>
         <span class="hljs-attr">"title"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span><span class="hljs-punctuation">,</span>
-        <span class="hljs-attr">"author"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span>
+        <span class="hljs-attr">"author"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"abc123"</span>
       <span class="hljs-punctuation">}</span>
     <span class="hljs-punctuation">]</span>
   <span class="hljs-punctuation">}</span>
 <span class="hljs-punctuation">}</span>
-</code></pre>
-                    </body>
-                  </html>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section id="query-id" class="operation operation-query" data-traverse-target="query-id">
-            <div class="operation-group-name">
-              <a href="#group-Operations-Queries">Queries</a>
-            </div>
-            <h2 class="operation-heading ">
-              <code>id</code>
-            </h2>
-            <div class="doc-row">
-              <div class="doc-copy">
-                <div class="operation-response doc-copy-section">
-                  <h5>Response</h5>
-                  <p> Returns a <a href="#definition-String"><code>String!</code></a>
-                  </p>
-                </div>
-              </div>
-              <div class="doc-examples">
-                <h4 class="example-heading">Example</h4>
-                <div class="example-section example-section-is-code operation-query-example">
-                  <h5>Query</h5>
-                  <html>
-                    <head></head>
-                    <body><pre><code class="hljs language-gql"><span class="hljs-symbol"><span class="hljs-keyword">query</span> Id <span class="hljs-tag">{
-  <span class="hljs-symbol">id</span>
-}</span></span>
-</code></pre>
-                    </body>
-                  </html>
-                </div>
-                <div class="example-section example-section-is-code operation-response-example">
-                  <h5>Response</h5>
-                  <html>
-                    <head></head>
-                    <body><pre><code class="hljs language-json"><span class="hljs-punctuation">{</span><span class="hljs-attr">"data"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span><span class="hljs-attr">"id"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"abc123"</span><span class="hljs-punctuation">}</span><span class="hljs-punctuation">}</span>
-</code></pre>
-                    </body>
-                  </html>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section id="query-type" class="operation operation-query" data-traverse-target="query-type">
-            <div class="operation-group-name">
-              <a href="#group-Operations-Queries">Queries</a>
-            </div>
-            <h2 class="operation-heading ">
-              <code>type</code>
-            </h2>
-            <div class="doc-row">
-              <div class="doc-copy">
-                <div class="operation-response doc-copy-section">
-                  <h5>Response</h5>
-                  <p> Returns an <a href="#definition-EnumValue"><code>EnumValue!</code></a>
-                  </p>
-                </div>
-              </div>
-              <div class="doc-examples">
-                <h4 class="example-heading">Example</h4>
-                <div class="example-section example-section-is-code operation-query-example">
-                  <h5>Query</h5>
-                  <html>
-                    <head></head>
-                    <body><pre><code class="hljs language-gql"><span class="hljs-symbol"><span class="hljs-keyword">query</span> Type <span class="hljs-tag">{
-  <span class="hljs-symbol">type</span>
-}</span></span>
-</code></pre>
-                    </body>
-                  </html>
-                </div>
-                <div class="example-section example-section-is-code operation-response-example">
-                  <h5>Response</h5>
-                  <html>
-                    <head></head>
-                    <body><pre><code class="hljs language-json"><span class="hljs-punctuation">{</span><span class="hljs-attr">"data"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span><span class="hljs-attr">"type"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"TYPE_1"</span><span class="hljs-punctuation">}</span><span class="hljs-punctuation">}</span>
 </code></pre>
                     </body>
                   </html>
@@ -374,7 +265,7 @@
                     <head></head>
                     <body><pre><code class="hljs language-json"><span class="hljs-punctuation">{</span>
   <span class="hljs-attr">"id"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"784a07a9-d103-4ccb-926f-b38fc6b071f2"</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">"title"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">"title"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"abc123"</span><span class="hljs-punctuation">,</span>
   <span class="hljs-attr">"author"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span>
 <span class="hljs-punctuation">}</span>
 </code></pre>
@@ -435,7 +326,7 @@
                     <body><pre><code class="hljs language-json"><span class="hljs-punctuation">{</span>
   <span class="hljs-attr">"id"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"447f51e8-27d0-4827-b3d0-140b8e78bd47"</span><span class="hljs-punctuation">,</span>
   <span class="hljs-attr">"title"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"abc123"</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">"author"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"abc123"</span>
+  <span class="hljs-attr">"author"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span>
 <span class="hljs-punctuation">}</span>
 </code></pre>
                     </body>
@@ -462,54 +353,6 @@
                   <html>
                     <head></head>
                     <body><pre><code class="hljs language-json"><span class="hljs-literal"><span class="hljs-keyword">true</span></span>
-</code></pre>
-                    </body>
-                  </html>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section id="definition-EnumValue" class="definition definition-enum" data-traverse-target="definition-EnumValue">
-            <div class="definition-group-name">
-              <a href="#group-Types">Types</a>
-            </div>
-            <h2 class="definition-heading">EnumValue</h2>
-            <div class="doc-row">
-              <div class="doc-copy">
-                <div class="definition-properties doc-copy-section">
-                  <h5>Values</h5>
-                  <table>
-                    <thead>
-                      <tr>
-                        <th>Enum Value</th>
-                        <th>Description</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>
-                          <p><code>TYPE_1</code></p>
-                        </td>
-                        <td>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <p><code>TYPE_2</code></p>
-                        </td>
-                        <td>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-              <div class="doc-examples">
-                <div class="example-section example-section-is-code">
-                  <h5>Example</h5>
-                  <html>
-                    <head></head>
-                    <body><pre><code class="hljs language-gql"><span class="hljs-symbol">"TYPE_1"</span>
 </code></pre>
                     </body>
                   </html>

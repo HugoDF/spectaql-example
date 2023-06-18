@@ -1,0 +1,23 @@
+spectaql:
+  targetDir: docs/multi
+
+introspection:
+  # the combination of a dummy `Query` type
+  # and setting "document by default" to false
+  # means we're generating no schema docs
+  schemaFile: ./multi-schema/noop.gql
+  objectsDocumentedDefault: false
+
+info:
+  title: Multiple Schemas with SpectaQL
+  description: |
+    Multi schemas with SpectaQL
+
+    - [Go to schema.gql documentation](./schema-gql/index.html)
+    - [Go to other-schema.gql documentation](./other-schema-gql/index.html)
+  x-url: "https://github.com/HugoDF/spectaql-example"
+  x-introItems:
+    - title: schema.gql
+      url: ./schema-gql/index.html
+    - title: other-schema.gql
+      url: ./other-schema-gql/index.html
