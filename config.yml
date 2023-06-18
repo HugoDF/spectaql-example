@@ -26,3 +26,5 @@ info:
         | Something | value |
         | --- | --- |
         | Key | "123" |
+    - title: Multiple schema site example
+      url: "./multi/index.html"
