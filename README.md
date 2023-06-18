@@ -2,7 +2,9 @@
 
 Minimal SpectaQL example using a static schema to build a docs site (hostable on eg. GH pages).
 
-[spectaql](https://github.com/anvilco/spectaql)
+See it live (hosted on GitHub Pages): https://example.codewithhugo.com/spectaql-example/
+
+[spectaql](https://github.com/anvilco/spectaql).
 
 ## Setup
 
@@ -17,4 +19,3 @@ Minimal SpectaQL example using a static schema to build a docs site (hostable on
 ## LICENSE
 
 Code is licensed under the [MIT License](./LICENSE).
-

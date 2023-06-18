@@ -1,4 +1,5 @@
 {
+  "_schema": "see https://github.com/anvilco/spectaql/blob/2dc77ecefe0459e1c92bbc8de7cb05b9258453c2/examples/data/metadata.json",
   "INPUT_OBJECT": {
     "BookInput": {
       "inputFields": {
