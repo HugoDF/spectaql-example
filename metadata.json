@@ -1,0 +1,24 @@
+{
+  "INPUT_OBJECT": {
+    "BookInput": {
+      "inputFields": {
+        "id": {
+          "documentation": {
+            "example": "447f51e8-27d0-4827-b3d0-140b8e78bd47"
+          }
+        }
+      }
+    }
+  },
+  "OBJECT": {
+    "Book": {
+      "fields": {
+        "id": {
+          "documentation": {
+            "example": "784a07a9-d103-4ccb-926f-b38fc6b071f2"
+          }
+        }
+      }
+    }
+  }
+}

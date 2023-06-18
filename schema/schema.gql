@@ -1,8 +1,10 @@
 type Book {
+  id: ID!
   title: String!
   author: String!
 }
 input BookInput {
+  id: ID!
   title: String!
   "**Deprecated** we're still waiting for `@deprecated` on input fields (note that markdown in GQL descriptions works)"
   author: String!
